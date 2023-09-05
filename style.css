@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  nav {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: orange;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .container{
+    height: 100vh;
+    margin: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .view{
+    background-image: url(img/robotics.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin-top: 30px;
+  }
+
+  .text{
+    padding: 2rem;
+    text-align: center;
+    margin-top: 40px;
+    height: 250px;
+    /* background-color: green; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .logo{
+    background-image: url(img/jj.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    height: 160px;
+    width: 160px;
+  }
+
+  .text h1{
+    color: white;
+  }
+
+  .robotics h1{
+    color: orange;
+  }
+
+  .text p{
+    color: white;
+  }
+
+  .section2{
+    height: 100vh;
+    background-color: white;
+    padding: 2rem;
+    display: grid;
+    /* grid-template-rows: ; */
+  }
+
+  .services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: -140px;
+    height: 400px;
+  }
+
+  .one{
+    background-image: url(img/one.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .two{
+    background-image: url(img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .three{
+    background-image: url(img/three.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .writeup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    height: 60px;
+    margin-top: -80px;
+  }
+
+  button{
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 0;
+    transition: transform 0.5s;
+    margin-top: 90%;
+    background-color: orange;
+    color: white;
+  }
+
+  button:hover{
+    transform: translateY(2px);
+    cursor: pointer;
+    background-color: white;
+    color: orange;
+  }
+
+  span{
+    color: orange;
+  }
+
+  /* ///////////////////services//////////////// */
+
+  .servcont{
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    margin: 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .content{
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .context{
+    border-radius: 10px;
+  }
+
+  .context h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .rob{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .robtent{
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .robtext{
+    border-radius: 10px;
+  }
+
+  .robtext h1{
+    color: orange;
+    text-align: center;
+    padding: 2rem;
+  }
+
+
+  /* /////////////////////team//////////////// */
+
+  .team{
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 0.5fr 2.5fr;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .teamtext{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  /* .teamtext h1{
+    transition: transform 0.5s;
+    transform: translateY(-20px);
+  } */
+
+  .teampictures{
+    padding: 2rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -40px;
+  }
+
+  .ceo{
+    height: 350px;
+    background-image: url(img/joe.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+  }
+
+  .productmanager{
+    height: 350px;
+    background-image: url(img/jimmy.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+  }
+
+  .technician{
+    height: 350px;
+    background-image: url(img/joe.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+  }
+
+  footer{
+    background-color: white;
+    height: 80px;
+    padding: 2rem;
+  }
+
+
+  h4{
+    font-weight: lighter;
+  }
+
+
+  /* ///////////////automation//////////// */
+
+  .mlearning{
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .learntent{
+    background-color: white;
+    height: 400px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .learntext{
+    border-radius: 10px;
+  }
+
+  .learntext h1{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .learntext p{
+    color: white;
+  }
+
+  .home{
+    height: 80px;
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .device{
+    background-color: grey;
+    padding: 2rem;
+    color: white;
+  }
+
+  .device2{
+      margin: 0 auto;
+      padding: 20px;
+      background-color: greenyellow;
+      border-radius: 5px;
+      height: 340px;
+  }
